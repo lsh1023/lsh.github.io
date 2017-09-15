@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Activity的生命周期与启动方式 | LSH</title>
+  <title>Java基础 | LSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="正常情况下activity的生命周期##   onCreate   onPause onStart onResume onPause onStop onDestory  activity的优先级1.前台进程 —正在和用户交互的activity，优先级最高 2.可见但非前台activity—比如activity中弹出一个对话框，导致activity可见但是位于后台无法和用户直接交互 3.后台acti">
+  <meta name="description" content="java语言的基本组成##  关键字 标识符 注释 常量和变量 运算符 语句 函数 数组">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Activity的生命周期与启动方式">
-<meta property="og:url" content="http://yoursite.com/2017/09/15/Activity的生命周期与启动方式/index.html">
+<meta property="og:title" content="Java基础">
+<meta property="og:url" content="http://yoursite.com/2017/09/15/Java基础/index.html">
 <meta property="og:site_name" content="LSH">
-<meta property="og:description" content="正常情况下activity的生命周期##   onCreate   onPause onStart onResume onPause onStop onDestory  activity的优先级1.前台进程 —正在和用户交互的activity，优先级最高 2.可见但非前台activity—比如activity中弹出一个对话框，导致activity可见但是位于后台无法和用户直接交互 3.后台acti">
+<meta property="og:description" content="java语言的基本组成##  关键字 标识符 注释 常量和变量 运算符 语句 函数 数组">
 <meta property="og:locale" content="����">
-<meta property="og:image" content="https://i.imgur.com/XTqyTsi.png">
-<meta property="og:updated_time" content="2017-09-15T06:30:12.637Z">
+<meta property="og:updated_time" content="2017-09-15T13:32:07.168Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Activity的生命周期与启动方式">
-<meta name="twitter:description" content="正常情况下activity的生命周期##   onCreate   onPause onStart onResume onPause onStop onDestory  activity的优先级1.前台进程 —正在和用户交互的activity，优先级最高 2.可见但非前台activity—比如activity中弹出一个对话框，导致activity可见但是位于后台无法和用户直接交互 3.后台acti">
-<meta name="twitter:image" content="https://i.imgur.com/XTqyTsi.png">
+<meta name="twitter:title" content="Java基础">
+<meta name="twitter:description" content="java语言的基本组成##  关键字 标识符 注释 常量和变量 运算符 语句 函数 数组">
   
     <link rel="alternative" href="/atom.xml" title="LSH" type="application/atom+xml">
   
@@ -172,46 +170,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Activity的生命周期与启动方式" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Activity的生命周期与启动方式
+      Java基础
     </h1>
   
 
         
-        <a href="/2017/09/15/Activity的生命周期与启动方式/" class="archive-article-date">
-  	<time datetime="2017-09-15T06:27:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
+        <a href="/2017/09/15/Java基础/" class="archive-article-date">
+  	<time datetime="2017-09-15T13:27:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="正常情况下activity的生命周期"><a href="#正常情况下activity的生命周期" class="headerlink" title="正常情况下activity的生命周期"></a>正常情况下activity的生命周期</h1><p>##</p>
-<p>  onCreate</p>
-<p>  onPause</p>
-<p>onStart</p>
-<p>onResume</p>
-<p>onPause</p>
-<p>onStop</p>
-<p>onDestory</p>
-<p><img src="https://i.imgur.com/XTqyTsi.png" alt=""></p>
-<h2 id="activity的优先级"><a href="#activity的优先级" class="headerlink" title="activity的优先级"></a>activity的优先级</h2><p>1.前台进程 —正在和用户交互的activity，优先级最高</p>
-<p>2.可见但非前台activity—比如activity中弹出一个对话框，导致activity可见但是位于后台无法和用户直接交互</p>
-<p>3.后台activity—已经被暂停的activity，比如执行了onStop，优先级最低</p>
-<p>4.空进程</p>
-<p>当系统内存不足时，系统就会按照优先级的顺序杀死目标activity所有的进程，并在后续的<br>onSaveInstanceState和onRestoreInstanceState来存储和恢复数据。</p>
-<p>当系统配置发送改变后，activity会被重新创建。不想让activity在屏幕旋转的时候重新创建<br>就可以在configChange属性添加orientation值<br>android:configChanges=”orientation|keyboardHidden”</p>
-<p>activity的启动模式：后进先出的栈结构<br>LaunchMode:</p>
-<p>standard;标准模式，默认模式</p>
-<p>singleTop,栈顶复用模式</p>
-<p> singleTask,栈内复用模式</p>
-<p>  singleInstance，单实例模式</p>
+        <h1 id="java语言的基本组成"><a href="#java语言的基本组成" class="headerlink" title="java语言的基本组成"></a>java语言的基本组成</h1><p>##</p>
+<ul>
+<li>关键字</li>
+<li>标识符</li>
+<li>注释</li>
+<li>常量和变量</li>
+<li>运算符</li>
+<li>语句</li>
+<li>函数</li>
+<li>数组 </li>
+</ul>
 
       
 
@@ -291,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/15/Activity的生命周期与启动方式/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/15/Java基础/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -305,18 +294,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/15/Java基础/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Java基础
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/15/IPC/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">IPC</div>
+    <a href="/2017/09/15/Activity的生命周期与启动方式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Activity的生命周期与启动方式</div>
       <i class="icon-circle-right"></i>
     </a>
   
