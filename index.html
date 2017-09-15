@@ -159,6 +159,66 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-IPC" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Android中的多进程模式：</p>
+<h3 id="在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定"><a href="#在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定" class="headerlink" title="在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定"></a>在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定</h3><p>android:process属性。<br>非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。</p>
+<p>IPC：Serializable接口，Parcelable接口以及Binder<br>个人感觉还是Parcelable好用<br>Ibander</p>
+<p>Bundle</p>
+<p>Messenger:信使</p>
+<p>##AIDL<br>在aidl文件中，并不是所有的数据类型都是可以使用的，支持以下数据类型：</p>
+<ul>
+<li>基本数据类型（int ，long ,char,boolean, double）等<br>String 和CharSequence;</li>
+<li>List:只支持ArrayList，里面每个元素都必须能够被AIDL支持</li>
+<li>Map:只支持HashMap，里面的每个元素都必须被AIDL支持，包括key和value</li>
+<li>Parcelable:所有实现了Parcelable接口的对象。</li>
+<li>AIDL：所有的aidl接口本身也可以在AIDL文件中使用</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/15/IPC/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-React-Native" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
