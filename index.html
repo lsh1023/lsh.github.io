@@ -171,6 +171,102 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-自定义View" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/19/自定义View/">自定义View</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/19/自定义View/" class="archive-article-date">
+  	<time datetime="2017-09-19T00:40:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="自定义View"><a href="#自定义View" class="headerlink" title="自定义View"></a>自定义View</h1><p>##单点触碰的事件处理一般是这样写</p>
+<pre><code>   @Override
+public boolean onTouchEvent(MotionEvent event) {
+    switch (event.getAction()) {
+        case MotionEvent.ACTION_DOWN:
+            //手指按下
+            break;
+        case MotionEvent.ACTION_MOVE:
+            //手指移动
+            break;
+        case MotionEvent.ACTION_UP:
+            //手指抬起
+            break;
+        case MotionEvent.ACTION_CANCEL:
+            //事件被拦截
+            break;
+        case MotionEvent.ACTION_OUTSIDE:
+            //超出区域
+            break;
+    }
+    return super.onTouchEvent(event);
+}
+</code></pre><p>##</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/19/自定义View/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Java基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -191,8 +287,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="java语言的基本组成"><a href="#java语言的基本组成" class="headerlink" title="java语言的基本组成"></a>java语言的基本组成</h1><p>##</p>
-<ul>
+        <h1 id="java语言的基本组成"><a href="#java语言的基本组成" class="headerlink" title="java语言的基本组成"></a>java语言的基本组成</h1><ul>
 <li><p>关键字</p>
 </li>
 <li><p>标识符</p>
@@ -800,6 +895,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
             
             <div class="clearfix"></div>
