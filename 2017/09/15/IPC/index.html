@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>IPC | LSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Android中的多进程模式： 在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定android:process属性。非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。 IPC：Serializable接口，Parcelable接口以及Binder个人感觉还是Parcelable好用Ibander Bundle Mes">
+  <meta name="description" content="#Android中的多进程模式： 在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定android:process属性。非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。 ##AIDL在aidl文件中，并不是所有的数据类型都是可以使用的，支持以下数据类型：  基本数据类型（int ，long ,char,boolean,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IPC">
 <meta property="og:url" content="http://yoursite.com/2017/09/15/IPC/index.html">
 <meta property="og:site_name" content="LSH">
-<meta property="og:description" content="#Android中的多进程模式： 在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定android:process属性。非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。 IPC：Serializable接口，Parcelable接口以及Binder个人感觉还是Parcelable好用Ibander Bundle Mes">
+<meta property="og:description" content="#Android中的多进程模式： 在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定android:process属性。非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。 ##AIDL在aidl文件中，并不是所有的数据类型都是可以使用的，支持以下数据类型：  基本数据类型（int ，long ,char,boolean,">
 <meta property="og:locale" content="����">
-<meta property="og:updated_time" content="2017-09-15T06:20:49.952Z">
+<meta property="og:updated_time" content="2017-09-19T07:30:05.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IPC">
-<meta name="twitter:description" content="#Android中的多进程模式： 在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定android:process属性。非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。 IPC：Serializable接口，Parcelable接口以及Binder个人感觉还是Parcelable好用Ibander Bundle Mes">
+<meta name="twitter:description" content="#Android中的多进程模式： 在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定android:process属性。非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。 ##AIDL在aidl文件中，并不是所有的数据类型都是可以使用的，支持以下数据类型：  基本数据类型（int ，long ,char,boolean,">
   
     <link rel="alternative" href="/atom.xml" title="LSH" type="application/atom+xml">
   
@@ -192,9 +192,6 @@
       
         <p>#Android中的多进程模式：</p>
 <h3 id="在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定"><a href="#在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定" class="headerlink" title="在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定"></a>在Android中使用多进程只有一种方法，那就是给四大组件在AndroidManifest中指定</h3><p>android:process属性。<br>非常规的多进程方法，就是通过JNI在native层去fork一个新的进程，不常用。</p>
-<p>IPC：Serializable接口，Parcelable接口以及Binder<br>个人感觉还是Parcelable好用<br>Ibander</p>
-<p>Bundle</p>
-<p>Messenger:信使</p>
 <p>##AIDL<br>在aidl文件中，并不是所有的数据类型都是可以使用的，支持以下数据类型：</p>
 <ul>
 <li>基本数据类型（int ，long ,char,boolean, double）等<br>String 和CharSequence;</li>
@@ -202,6 +199,21 @@
 <li>Map:只支持HashMap，里面的每个元素都必须被AIDL支持，包括key和value</li>
 <li>Parcelable:所有实现了Parcelable接口的对象。</li>
 <li>AIDL：所有的aidl接口本身也可以在AIDL文件中使用</li>
+</ul>
+<p>IPC：Serializable接口，Parcelable接口以及Binder<br>个人感觉还是Parcelable好用<br>Binder</p>
+<h2 id="Android中的IPC方式"><a href="#Android中的IPC方式" class="headerlink" title="Android中的IPC方式"></a>Android中的IPC方式</h2><ul>
+<li><p>使用Bundle</p>
+</li>
+<li><p>使用文件共享</p>
+</li>
+<li><p>使用Messenger</p>
+</li>
+<li><p>使用AIDL</p>
+</li>
+<li><p>使用ContentProvider</p>
+</li>
+<li><p>使用Socket</p>
+</li>
 </ul>
 
       
