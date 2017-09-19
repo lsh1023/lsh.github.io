@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>自定义View | LSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="自定义View##单点触碰的事件处理一般是这样写    @Override public boolean onTouchEvent(MotionEvent event) {     switch (event.getAction()) {         case MotionEvent.ACTION_DOWN:             //手指按下             break;">
+  <meta name="description" content="#JNI java native interface #C的基本数据类型  int：32位，能标识的数字是2的32次方 最高位用来表示符号位，还剩下31位可以表示数值，所以能表示的数字及时2的31次方 int的表示范围 -2的31次方~~~2的31次方 当最高位是0时：0~2147483647 当最高位是1时：-2147483648~0    java的基本数据类型 byte:1   short:">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自定义View">
-<meta property="og:url" content="http://yoursite.com/2017/09/19/自定义View/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/09/19/JNI/index.html">
 <meta property="og:site_name" content="LSH">
-<meta property="og:description" content="自定义View##单点触碰的事件处理一般是这样写    @Override public boolean onTouchEvent(MotionEvent event) {     switch (event.getAction()) {         case MotionEvent.ACTION_DOWN:             //手指按下             break;">
+<meta property="og:description" content="#JNI java native interface #C的基本数据类型  int：32位，能标识的数字是2的32次方 最高位用来表示符号位，还剩下31位可以表示数值，所以能表示的数字及时2的31次方 int的表示范围 -2的31次方~~~2的31次方 当最高位是0时：0~2147483647 当最高位是1时：-2147483648~0    java的基本数据类型 byte:1   short:">
 <meta property="og:locale" content="����">
-<meta property="og:updated_time" content="2017-09-19T01:09:12.832Z">
+<meta property="og:updated_time" content="2017-09-19T07:33:07.928Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自定义View">
-<meta name="twitter:description" content="自定义View##单点触碰的事件处理一般是这样写    @Override public boolean onTouchEvent(MotionEvent event) {     switch (event.getAction()) {         case MotionEvent.ACTION_DOWN:             //手指按下             break;">
+<meta name="twitter:description" content="#JNI java native interface #C的基本数据类型  int：32位，能标识的数字是2的32次方 最高位用来表示符号位，还剩下31位可以表示数值，所以能表示的数字及时2的31次方 int的表示范围 -2的31次方~~~2的31次方 当最高位是0时：0~2147483647 当最高位是1时：-2147483648~0    java的基本数据类型 byte:1   short:">
   
     <link rel="alternative" href="/atom.xml" title="LSH" type="application/atom+xml">
   
@@ -171,7 +171,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-自定义View" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JNI" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -183,7 +183,7 @@
   
 
         
-        <a href="/2017/09/19/自定义View/" class="archive-article-date">
+        <a href="/2017/09/19/JNI/" class="archive-article-date">
   	<time datetime="2017-09-19T00:40:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
 </a>
         
@@ -191,29 +191,39 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="自定义View"><a href="#自定义View" class="headerlink" title="自定义View"></a>自定义View</h1><p>##单点触碰的事件处理一般是这样写</p>
-<pre><code>   @Override
-public boolean onTouchEvent(MotionEvent event) {
-    switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN:
-            //手指按下
-            break;
-        case MotionEvent.ACTION_MOVE:
-            //手指移动
-            break;
-        case MotionEvent.ACTION_UP:
-            //手指抬起
-            break;
-        case MotionEvent.ACTION_CANCEL:
-            //事件被拦截
-            break;
-        case MotionEvent.ACTION_OUTSIDE:
-            //超出区域
-            break;
-    }
-    return super.onTouchEvent(event);
-}
-</code></pre><p>##</p>
+        <p>#JNI<br> java native interface</p>
+<p>#C的基本数据类型</p>
+<ul>
+<li>int：32位，能标识的数字是2的32次方</li>
+<li>最高位用来表示符号位，还剩下31位可以表示数值，所以能表示的数字及时2的31次方</li>
+<li>int的表示范围 -2的31次方~~~2的31次方<ul>
+<li>当最高位是0时：0~2147483647</li>
+<li>当最高位是1时：-2147483648~0</li>
+</ul>
+</li>
+</ul>
+<h3 id="java的基本数据类型"><a href="#java的基本数据类型" class="headerlink" title="java的基本数据类型"></a>java的基本数据类型</h3><ul>
+<li>byte:1  </li>
+<li>short:2</li>
+<li>int :4</li>
+<li>long :8   C:4</li>
+<li>boolean :1</li>
+<li>char:2   C:1</li>
+<li>float:4</li>
+<li>double :8</li>
+</ul>
+<h3 id="输入输出函数"><a href="#输入输出函数" class="headerlink" title="输入输出函数"></a>输入输出函数</h3><ul>
+<li>%d  -  int</li>
+<li>%ld – long int</li>
+<li>%hd – 短整型</li>
+<li>%c  - char</li>
+<li>%f -  float</li>
+<li>%lf – double</li>
+<li>%u – 无符号数</li>
+<li>%x – 十六进制输出 int 或者long int 或者short int</li>
+<li>%o -  八进制输出</li>
+<li>%s – 字符串</li>
+</ul>
 
       
 
@@ -304,7 +314,7 @@ public boolean onTouchEvent(MotionEvent event) {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/19/自定义View/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/19/JNI/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -318,18 +328,9 @@ public boolean onTouchEvent(MotionEvent event) {
   
 <nav id="article-nav">
   
-    <a href="/2017/09/19/JNI/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          自定义View
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/15/Java基础/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java基础</div>
+    <a href="/2017/09/19/自定义View/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">自定义View</div>
       <i class="icon-circle-right"></i>
     </a>
   
